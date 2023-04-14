@@ -101,6 +101,18 @@ table.forum_index.m_table tr td {
     padding: 20px;
 }
 
+.tl_free {
+    color: #efca66;
+}
+
+#collage ul.collage_images li {
+    width: 8%;
+    margin: 1%;
+}
+#collage ul.collage_images li a img {
+    border-radius: 21px;
+}
+
 @media screen and (min-width: 768px) {
     #menu li:nth-child(1), #menu li:nth-child(2), #menu li:nth-child(3), #menu li:nth-child(4), #menu li:nth-child(5), #menu li:nth-child(6), #menu li:nth-child(7), #menu li:nth-child(8), #menu li:nth-child(9) {
         border-right: 1px solid #3c3943;
