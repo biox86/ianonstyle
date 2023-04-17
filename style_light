@@ -1,0 +1,201 @@
+@import url('https://ianon.app/static/styles/apollostage_sunset/style.css');
+
+html {
+    -webkit-filter: invert(100%);
+    -moz-filter: invert(100%); 
+    -o-filter: invert(100%); 
+    -ms-filter: invert(100%);
+}
+
+#menu, img, #userinfo_username, .cats_applications, .cats_audiobooks, .cats_comedy, .cats_comics, .cats_ebooks, .cats_elearningvideos, .important_text {
+    -webkit-filter: invert(100%) !important;
+    -moz-filter: invert(100%) !important; 
+    -o-filter: invert(100%) !important; 
+    -ms-filter: invert(100%) !important;
+}
+
+#wrapper {
+    max-width: 1400px;
+}
+
+img {
+    border-radius: 6px;
+}
+.avatar {
+    background-color: #35333a;
+}
+.avatar_container img {
+    border-radius: 0px;
+}
+
+button, input[type=button], input[type=submit], input[type=email], input[type=password], input[type=text], input[type=search], select, textarea {
+    border-radius: 6px;
+}
+
+#menu {
+    border-radius: 6px;
+}
+
+#menu > ul li.active a, #menu > ul a:hover, #userinfo_minor:hover a:hover, #userinfo_username:hover a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+#menu li.active a {
+    color: #ffffff !important;
+}
+
+#menu li:nth-child(1), #menu li:nth-child(2), #menu li:nth-child(3), #menu li:nth-child(4), #menu li:nth-child(5), #menu li:nth-child(6), #menu li:nth-child(7), #menu li:nth-child(8), #menu li:nth-child(9) {
+    text-transform: uppercase;
+    text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+
+}
+#nav_inbox, #nav_staffinbox {
+    text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+}
+#userinfo_username {
+    text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+#nav_userinfo {
+    border-radius: 0 6px 0 0;
+    text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+#userinfo_username, #userinfo_username li , #userinfo_minor, #userinfo_minor li {
+
+}
+
+#userinfo_minor {
+    background: #4e4a58;
+    border-radius: 0 6px 6px 0;
+}
+#userinfo_minor:hover, #userinfo_minor li {
+    background-color: #5c5866;
+}
+
+#searchbars > ul {
+    background-color: transparent;
+}
+
+#searchbars .search_form input {
+    border-radius: 6px;
+}
+
+form {
+    border-radius: 6px;
+}
+
+.box.pad .search_form, .search_form .filter_torrents, .search_form .filter_torrents div.submit, .searchbars .search_form, .sidebar .search_form {
+    border-radius: 6px;
+}
+
+.cats_applications, .cats_audiobooks, .cats_comedy, .cats_comics, .cats_ebooks, .cats_elearningvideos {
+    right: 0px;
+    width: 18px;
+}
+
+#top10 .cats_col .cats_applications, #top10 .cats_col .cats_audiobooks, #top10 .cats_col .cats_comedy, #top10 .cats_col .cats_comics, #top10 .cats_col .cats_ebooks, #top10 .cats_col .cats_elearningvideos {
+    right: 0px;
+    width: 34px;
+}
+
+#top10 td:not(.cats_col) .cats_applications, #top10 td:not(.cats_col) .cats_audiobooks, #top10 td:not(.cats_col) .cats_comedy, #top10 td:not(.cats_col) .cats_comics, #top10 td:not(.cats_col) .cats_ebooks #top10 td:not(.cats_col) .cats_elearningvideos {
+    width: 0px;
+}
+
+table, .box {
+    border-radius: 6px;
+    overflow: hidden !important;
+}
+
+.req-choice {
+    vertical-align: top;
+}
+
+form input {
+    vertical-align: baseline;
+}
+
+table.forum_index.m_table tr td {
+    line-height: 26px;
+}
+
+.colhead, .colhead_dark {
+    border-radius: 6px;
+}
+
+.sidebar .box #covers {
+    padding: 20px;
+}
+
+.tl_free {
+    color: #2ddceb;
+}
+
+#collage ul.collage_images li {
+    width: 8%;
+    margin: 1%;
+}
+#collage ul.collage_images li a img {
+    border-radius: 21px;
+}
+
+@media screen and (min-width: 768px) {
+    #menu li:nth-child(1), #menu li:nth-child(2), #menu li:nth-child(3), #menu li:nth-child(4), #menu li:nth-child(5), #menu li:nth-child(6), #menu li:nth-child(7), #menu li:nth-child(8), #menu li:nth-child(9) {
+        border-right: 1px solid #ddd;
+    }
+    #userinfo_username {
+        border-left: 1px solid #ddd;
+    }
+}
+
+@media (max-width: 768px) {
+    #forums input {
+        padding: 0 8px;
+        font-size: 14px;
+    }
+    div .forum_post .body img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    #searchbars {
+        margin-bottom: 8px;
+    }
+    #searchbars > ul {
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+    #searchbars > ul li {
+        margin: 0px 0px 0px 0px;
+        flex: 0 0 31.5%;
+    }
+    #searchbars > ul li:last-child {
+        margin: 0px 0px 0px 0px;
+    }
+    #searchbars > ul li#searchbar_log {
+        display: none;
+    }
+    #searchbars li .search_form {
+        padding: 0px !important; 
+    }
+    #forums input {
+        padding: 0 8px;
+        font-size: 15px;
+    }
+    .forum_post td.body {
+         width: auto; 
+         padding-left: 12px; 
+    }
+    .forum_post .avatar {
+        max-width: 60px;
+        padding: 0px;
+        width: 60px;
+    }
+    .forum_post .avatar img {
+        max-width: 60px !important;
+        min-width: 60px;
+    }
+}
