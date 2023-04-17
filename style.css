@@ -4,6 +4,21 @@
     max-width: 1400px;
 }
 
+img {
+    border-radius: 6px;
+}
+.avatar {
+    background-color: #323036;
+    border-right: 1px solid #333;
+}
+.avatar_container img {
+    border-radius: 0px;
+}
+
+button, input[type=button], input[type=submit], input[type=email], input[type=password], input[type=text], input[type=search], select, textarea {
+    border-radius: 6px;
+}
+
 #menu {
     border-radius: 6px;
 }
@@ -119,5 +134,55 @@ table.forum_index.m_table tr td {
     }
     #userinfo_username {
         border-left: 1px solid #3c3943;
+    }
+}
+
+@media (max-width: 768px) {
+    #forums input {
+        padding: 0 8px;
+        font-size: 14px;
+    }
+    div .forum_post .body img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    #searchbars {
+        margin-bottom: 8px;
+    }
+    #searchbars > ul {
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+    #searchbars > ul li {
+        margin: 0px 0px 0px 0px;
+        flex: 0 0 31.5%;
+    }
+    #searchbars > ul li:last-child {
+        margin: 0px 0px 0px 0px;
+    }
+    #searchbars > ul li#searchbar_log {
+        display: none;
+    }
+    #searchbars li .search_form {
+        padding: 0px !important; 
+    }
+    #forums input {
+        padding: 0 8px;
+        font-size: 15px;
+    }
+    .forum_post td.body {
+         width: auto; 
+         padding-left: 12px; 
+    }
+    .forum_post .avatar {
+        max-width: 60px;
+        padding: 0px;
+        width: 60px;
+    }
+    .forum_post .avatar img {
+        max-width: 60px !important;
+        min-width: 60px;
     }
 }
