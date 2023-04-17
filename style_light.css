@@ -141,12 +141,22 @@ table.forum_index.m_table tr td {
     border-radius: 21px;
 }
 
-@media screen and (min-width: 768px) {
+.poll .graph {
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+@media screen and (min-width: 481px) {
     #menu li:nth-child(1), #menu li:nth-child(2), #menu li:nth-child(3), #menu li:nth-child(4), #menu li:nth-child(5), #menu li:nth-child(6), #menu li:nth-child(7), #menu li:nth-child(8), #menu li:nth-child(9) {
         border-right: 1px solid #ddd;
     }
     #userinfo_username {
         border-left: 1px solid #ddd;
+    }
+}
+@media (min-width: 481px) and (max-width: 639px) {
+    #menu > ul, #inbox .body, #userinfo_username #nav_userinfo > a, .forum_post td.body, .box.news_post {
+        font-size: 10px;
     }
 }
 
@@ -186,8 +196,8 @@ table.forum_index.m_table tr td {
         font-size: 15px;
     }
     .forum_post td.body {
-         width: auto; 
-         padding-left: 12px; 
+        width: auto; 
+        padding-left: 12px; 
     }
     .forum_post .avatar {
         max-width: 60px;
