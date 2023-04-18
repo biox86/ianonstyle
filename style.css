@@ -175,7 +175,7 @@ form {
 .cats_applications, .cats_audiobooks, .cats_comedy, .cats_comics, .cats_ebooks, .cats_elearningvideos {
     right: 0px;
     width: 18px;
-    opacity: 0.5;
+    opacity: 0.4;
 }
 
 #top10 .cats_col .cats_applications, #top10 .cats_col .cats_audiobooks, #top10 .cats_col .cats_comedy, #top10 .cats_col .cats_comics, #top10 .cats_col .cats_ebooks, #top10 .cats_col .cats_elearningvideos {
