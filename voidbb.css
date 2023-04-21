@@ -13,30 +13,30 @@ h6 a,
 .alertbar,
 .tooltipster-default .tooltipster-content a:hover,
 #musicbrainz_popup a:hover {
-    color: #78c9b1;
+    color: #84ce88;
 }
 .poll .graph span {
-    background-color: #78c9b1;
+    background-color: #84ce88;
 }
 a:hover,
 .tags a:hover,
 #userform #settings_sections h2 a:hover {
-    color: #caeee5;
+    color: #c0f8c3;
 }
 svg|a:hover {
-    fill: #caeee5;
+    fill: #c0f8c3;
 }
 .autocomplete-suggestions .autocomplete-suggestion.autocomplete-selected,
 #menu > ul a:hover,
 #userinfo_minor:hover a:hover,
 #userinfo_username:hover a:hover {
-    background-color: #caeee5;
+    background-color: #c0f8c3;
 }
 #noty_bottomRight_layout_container .noty_buttons a:hover {
-    color: #caeee5 !important;
+    color: #c0f8c3 !important;
 }
 .forum_post.forum_unread {
-    border-top: 2px solid #caeee5;
+    border-top: 2px solid #c0f8c3;
 }
 
 
@@ -343,16 +343,17 @@ table td.td_forum h4 {
     padding: 20px;
 }
 
-.tl_free:before, .tl_free:after {
+.tl_free:before {
     z-index: -1;
     position: absolute;
-    top: 0px;
+    top: -2px;
     content: "";
-    border-radius: 10px;
+    border-radius: 3px;
     background-color: #141414;
     width: 100%;
     height: 19px;
     display: block;
+    padding: 0px 8px;
 /*    box-shadow: inset rgba(0,0,0,0.3) 0px 1px 3px,rgba(255,255,255,0.08) 0px 1px 0px;*/
 }
 .tl_free:before {
@@ -363,12 +364,14 @@ table td.td_forum h4 {
 }
 .tl_free {
     margin-left: 14px;
+    font-size: 12px;
     display: inline-block;
     background-color: transparent;
-    padding: 0px 4px 0px 4px;
+    padding: 0px;
     z-index: 1;
     color: #fed360;
     position: relative;
+    vertical-align: bottom;
     text-shadow: 0px 1px 2px rgba(0,0,0,1);
 }
 
