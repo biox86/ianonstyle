@@ -116,8 +116,8 @@ form.edit_form .main_columnm, form.edit_form .sidebar {
         box-shadow: inset rgba(255,255,255,0.1) 0px 1px 0px,inset rgba(0,0,0,0.1) 0px -1px 0px, #353535 0px 1px 0px;
     }
 }
-body:not(#torrents) #content .search_form {
-    padding: 1px;
+body #content .search_form {
+    padding: 0.1px;
 }
 .torrent_table tr:nth-child(odd), .message_table tr:nth-child(odd) {
     background-color: #232323 !important;
@@ -126,6 +126,9 @@ body:not(#torrents) #content .search_form {
     background-color: #262626 !important;
 }
 
+.box.pad {
+    border: 0px !important;
+}
 
 /***************/
 /* OBJS COLORS */
