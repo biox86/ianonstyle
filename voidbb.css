@@ -380,11 +380,11 @@ table td.td_forum h4 {
     overflow: hidden;
 }
 
-#collage ul.collage_images li {
+ul.collage_images li {
     width: 18%;
     margin: 1%;
 }
-#collage ul.collage_images li a img {
+ul.collage_images li a img {
     border-radius: 14px;
 }
 
@@ -401,13 +401,6 @@ table td.td_forum h4 {
     }
     #userinfo_username, #userinfo_minor {
         border-left: 1px solid #afafaf;
-    }
-    #collage ul.collage_images li {
-        width: 8%;
-        margin: 1%;
-    }
-    #collage ul.collage_images li a img {
-        border-radius: 21px;
     }
 }
 @media (min-width: 481px) and (max-width: 639px) {
