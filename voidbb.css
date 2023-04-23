@@ -380,11 +380,11 @@ table td.td_forum h4 {
     overflow: hidden;
 }
 
-ul.collage_images li {
+#index ul.collage_images li, #collage ul.collage_images li {
     width: 18%;
     margin: 1%;
 }
-ul.collage_images li a img {
+#index ul.collage_images li a img, #collage ul.collage_images li a img {
     border-radius: 14px;
 }
 
