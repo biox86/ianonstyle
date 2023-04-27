@@ -119,11 +119,20 @@ form.edit_form .main_columnm, form.edit_form .sidebar {
 body #content .search_form {
     padding: 0.1px;
 }
-.torrent_table tr:nth-child(odd), .message_table tr:nth-child(odd) {
+.message_table tr:nth-child(odd) {
     background-color: #232323 !important;
 }
-.torrent_table tr:nth-child(even), .message_table tr:nth-child(even) {
+.message_table tr:nth-child(even) {
     background-color: #262626 !important;
+}
+.torrent_table tr.group {
+    background-color: #262626 !important;
+}
+.torrent_table tr.group_torrent {
+    background-color: #1a1a1a !important;
+}
+.torrent_table tr.group_torrent:not(.colhead):not(.colhead_dark) {
+    border-top: 1px solid rgba(0,0,0,0.3);
 }
 
 .box.pad {
