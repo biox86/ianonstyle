@@ -203,20 +203,26 @@ table .rowb,
 .cats_applications {
     background-color: #54d1f1;
 }
-.cats_audiobooks {
+.cats_games {
     background-color: #c7ca76;
 }
-.cats_comedy {
+.cats_iosapplications {
     background-color: #ca9a76;
 }
-.cats_comics {
+.cats_iosgames {
     background-color: #9f76ca;
 }
-.cats_ebooks {
+.cats_graphics {
     background-color: #94ca76;
 }
-.cats_elearningvideos {
+.cats_audio {
     background-color: #ca76c5;
+}
+.cats_tutorials {
+    background-color: #ca7676;
+}
+.cats_other {
+    background-color: #666666;
 }
 
 
