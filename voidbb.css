@@ -305,6 +305,12 @@ form {
 .cats_applications, .cats_games, .cats_iosapplications, .cats_iosgames, .cats_graphics, .cats_audio, .cats_tutorials, .cats_other {
     right: 0px;
     width: 4px;
+    border-right: 2px solid #211f25;
+    bottom: 0;
+    left: auto;
+    opacity: 0.35;
+    position: absolute;
+    top: 0;
     opacity: 1;
 }
 
