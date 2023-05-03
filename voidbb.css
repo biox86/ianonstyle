@@ -13,30 +13,30 @@ h6 a,
 .alertbar,
 .tooltipster-default .tooltipster-content a:hover,
 #musicbrainz_popup a:hover {
-    color: #84ce88;
+    color: #fed360;
 }
 .poll .graph span {
-    background-color: #84ce88;
+    background-color: #fed360;
 }
 a:hover,
 .tags a:hover,
 #userform #settings_sections h2 a:hover {
-    color: #c0f8c3;
+    color: #ffe9af;
 }
 svg|a:hover {
-    fill: #c0f8c3;
+    fill: #ffe9af;
 }
 .autocomplete-suggestions .autocomplete-suggestion.autocomplete-selected,
 #menu > ul a:hover,
 #userinfo_minor:hover a:hover,
 #userinfo_username:hover a:hover {
-    background-color: #c0f8c3;
+    background-color: #ffe9af;
 }
 #noty_bottomRight_layout_container .noty_buttons a:hover {
-    color: #c0f8c3 !important;
+    color: #ffe9af !important;
 }
 .forum_post.forum_unread {
-    border-top: 2px solid #c0f8c3;
+    border-top: 2px solid #ffe9af;
 }
 
 
@@ -83,7 +83,7 @@ svg|a:hover {
 /* PAGE COLORS */
 /***************/
 body {
-    background-color: #181818;
+    background: #161616 url(ptrn.jpg) repeat;
 }
 
 table {
@@ -194,10 +194,24 @@ table .rowb,
 .box table:not(.layout),
 .box2 table:not(.layout) {
     border-top: 1px solid rgba(255,255,255,0.01);
+    height: 36px;
+}
+.torrent_table tr:not(.colhead):not(.colhead_dark).group, .torrent_table tr:not(.colhead):not(.colhead_dark).torrent {
+    height: 56px;
+}
+
+.torrent_table .group td:first-child {
+    padding: 4px 12px 4px 8px;
 }
 .torrent_table,
 #searchbars .search_form input:focus {
     background-color: #363636;
+}
+.hide_torrents > a::after {
+    content: "\2BC8";
+}
+.show_torrents > a::after {
+    content: "\2BC6";
 }
 
 /***************/
