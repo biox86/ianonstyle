@@ -208,10 +208,10 @@ table .rowb,
     background-color: #363636;
 }
 .hide_torrents > a::after {
-    content: "\2BC8";
+    content: "\2BC6";
 }
 .show_torrents > a::after {
-    content: "\2BC6";
+    content: "\2BC8";
 }
 
 /***************/
