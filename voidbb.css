@@ -194,10 +194,6 @@ table .rowb,
 .box table:not(.layout),
 .box2 table:not(.layout) {
     border-top: 1px solid rgba(255,255,255,0.01);
-    height: 36px;
-}
-.torrent_table tr:not(.colhead):not(.colhead_dark).group, .torrent_table tr:not(.colhead):not(.colhead_dark).torrent {
-    height: 56px;
 }
 
 .torrent_table .group td:first-child {
@@ -208,10 +204,10 @@ table .rowb,
     background-color: #363636;
 }
 .hide_torrents > a::after {
-    content: "\25BC";
+    content: "\2BC8";
 }
 .show_torrents > a::after {
-    content: "\25B6";
+    content: "\2BC6";
 }
 
 /***************/
@@ -439,6 +435,12 @@ table td.td_forum h4 {
     }
     #userinfo_username, #userinfo_minor {
         border-left: 1px solid #afafaf;
+    }
+    .torrent_table tr:not(.colhead):not(.colhead_dark) {
+        height: 36px;
+    }
+    .torrent_table tr:not(.colhead):not(.colhead_dark).group, .torrent_table tr:not(.colhead):not(.colhead_dark).torrent {
+        height: 56px;
     }
 }
 @media (min-width: 481px) and (max-width: 639px) {
