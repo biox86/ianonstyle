@@ -1,5 +1,9 @@
 @import url('https://ianon.app/static/styles/apollostage_sunset/style.css');
 
+.tooltipster-default .tooltipster-content, body, button, h1, h2, h3, h4, h5, h6, input, select, textarea {
+    font-family: "Proxima Nova", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Symbol";
+}
+
 /****************/
 /* TEXTS COLORS */
 /****************/
@@ -140,6 +144,16 @@ table .rowb,
     background-color: #000000;
 }
 
+.torrent_table .group td:first-child {
+    padding: 4px 12px 4px 8px;
+}
+.hide_torrents > a::after {
+    content: "\25BC";
+}
+.show_torrents > a::after {
+    content: "\25B6";
+}
+
 
 /***************/
 /* CATS COLORS */
@@ -147,20 +161,26 @@ table .rowb,
 .cats_applications {
     background-color: #54d1f1;
 }
-.cats_audiobooks {
-    background-color: #f2ca85;
+.cats_games {
+    background-color: #c7ca76;
 }
-.cats_comedy {
-    background-color: #f89a7e;
+.cats_iosapplications {
+    background-color: #eaa067;
 }
-.cats_comics {
-    background-color: #af81c9;
+.cats_iosgames {
+    background-color: #a265ed;
 }
-.cats_ebooks {
-    background-color: #50a361;
+.cats_graphics {
+    background-color: #94ca76;
 }
-.cats_elearningvideos {
-    background-color: #7c71ad;
+.cats_audio {
+    background-color: #ef8be9;
+}
+.cats_tutorials {
+    background-color: #df6464;
+}
+.cats_other {
+    background-color: #8c9196;
 }
 
 
@@ -194,7 +214,7 @@ button, input[type=button], input[type=submit], input[type=email], input[type=pa
     border-radius: 6px;
 }
 
-#menu > ul li.active a, #menu > ul a:hover, #userinfo_minor:hover a:hover, #userinfo_username:hover a:hover {
+#menu > ul li.active a, #menu > ul a:hover, #userinfo_username:hover a:hover, #userinfo_minor:hover a:hover, #userinfo_major:hover a:hover, #userinfo_stats:hover a:hover {
     background-color: rgba(0, 0, 0, 0.07);
 }
 
@@ -228,28 +248,46 @@ form {
     border-radius: 6px;
 }
 
+.box {
+    padding-bottom: 12px;
+}
+
 .box.pad .search_form, .search_form .filter_torrents, .search_form .filter_torrents div.submit, .searchbars .search_form, .sidebar .search_form {
     border-radius: 6px;
 }
 
-.cats_applications, .cats_audiobooks, .cats_comedy, .cats_comics, .cats_ebooks, .cats_elearningvideos {
+.cats_applications, .cats_games, .cats_iosapplications, .cats_iosgames, .cats_graphics, .cats_audio, .cats_tutorials, .cats_other {
     right: 0px;
     width: 4px;
+    border-right: 2px solid #211f25;
+    bottom: 0;
+    left: auto;
+    opacity: 0.35;
+    position: absolute;
+    top: 0;
     opacity: 1;
 }
 
-#top10 .cats_col .cats_applications, #top10 .cats_col .cats_audiobooks, #top10 .cats_col .cats_comedy, #top10 .cats_col .cats_comics, #top10 .cats_col .cats_ebooks, #top10 .cats_col .cats_elearningvideos {
+#top10 .cats_col .cats_applications, #top10 .cats_col .cats_games, #top10 .cats_col .cats_iosapplications, #top10 .cats_col .cats_iosgames, #top10 .cats_col .cats_graphics, #top10 .cats_col .cats_audio, #top10 .cats_col .cats_tutorials, #top10 .cats_col .cats_other {
     right: 0px;
     width: 4px;
 }
 
-#top10 td:not(.cats_col) .cats_applications, #top10 td:not(.cats_col) .cats_audiobooks, #top10 td:not(.cats_col) .cats_comedy, #top10 td:not(.cats_col) .cats_comics, #top10 td:not(.cats_col) .cats_ebooks #top10 td:not(.cats_col) .cats_elearningvideos {
+#top10 td:not(.cats_col) .cats_applications, #top10 td:not(.cats_col) .cats_games, #top10 td:not(.cats_col) .cats_iosapplications, #top10 td:not(.cats_col) .cats_iosgames, #top10 td:not(.cats_col) .cats_graphics, #top10 td:not(.cats_col) .cats_audio, #top10 td:not(.cats_col) .cats_tutorials, #top10 td:not(.cats_col) .cats_other {
     width: 0px;
 }
 
-table, .box {
+table {
     border-radius: 6px;
     overflow: hidden !important;
+}
+.box, #more_news .head {
+    border-radius: 6px;
+}
+
+.head {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
 }
 
 .req-choice {
@@ -260,8 +298,12 @@ form input {
     vertical-align: baseline;
 }
 
-table.forum_index.m_table tr td {
+table.forum_index tr td, table.message_table tr td {
     line-height: 26px;
+}
+
+table td.td_forum h4 {
+    font-weight: bold;
 }
 
 .wrap_overflow, .wrap_overflow a, .filelist_table td, .reportinfo_table, .torrentdetails blockquote {
@@ -283,33 +325,48 @@ table.forum_index.m_table tr td {
     color: #ffd45f;
 }
 
-#collage ul.collage_images li {
-    width: 8%;
-    margin: 1%;
-}
-#collage ul.collage_images li a img {
-    border-radius: 21px;
-}
-
 .poll .graph {
     border-radius: 4px;
     overflow: hidden;
 }
 
+#index ul.collage_images li, #collage ul.collage_images li {
+    width: 18%;
+    margin: 1%;
+}
+#index ul.collage_images li a img, #collage ul.collage_images li a img {
+    border-radius: 14px;
+}
+
+#upload #content > div {
+    min-width: 100%;
+}
+
 @media screen and (min-width: 481px) {
+    #menu > ul, #inbox .body, #userinfo_username #nav_userinfo > a {
+        font-size: 16px;
+    }
     #menu li:nth-child(1), #menu li:nth-child(2), #menu li:nth-child(3), #menu li:nth-child(4), #menu li:nth-child(5), #menu li:nth-child(6), #menu li:nth-child(7), #menu li:nth-child(8), #menu li:nth-child(9) {
         border-right: 1px solid #afafaf;
     }
-    #userinfo_username {
+    #userinfo_username, #userinfo_minor {
         border-left: 1px solid #afafaf;
     }
-    #userinfo_minor {
-        border-left: 1px solid #afafaf;
+    .torrent_table tr:not(.colhead):not(.colhead_dark) {
+        height: 36px;
+    }
+    .torrent_table tr:not(.colhead):not(.colhead_dark).group, .torrent_table tr:not(.colhead):not(.colhead_dark).torrent {
+        height: 56px;
     }
 }
 @media (min-width: 481px) and (max-width: 639px) {
     #menu > ul, #inbox .body, #userinfo_username #nav_userinfo > a, .forum_post td.body, .box.news_post {
         font-size: 10px;
+    }
+}
+@media (min-width: 640px) and (max-width: 1023px) {
+    #menu > ul, #inbox .body, #userinfo_username #nav_userinfo > a {
+        font-size: 14px;
     }
 }
 
@@ -360,5 +417,37 @@ table.forum_index.m_table tr td {
     .forum_post .avatar img {
         max-width: 60px !important;
         min-width: 60px;
+    }
+    .user_mobile_menu_toggle {
+        border-radius: 6px;
+    }
+    #upload #content > div {
+        max-width: 100%;
+    }
+}
+
+/*****************/
+/* SHADOWS FIXES */
+/*****************/
+#user #userform {
+    display: flex;
+    flex-flow: row wrap;
+    flex: 0 0 100%;
+}
+.box, .box2 {
+    margin-top: 10px;
+}
+@media (max-width: 480px) {
+    .settings_sidebar {
+        width: 100%;
+    }
+}
+@media screen and (min-width: 481px) {
+    .settings_sidebar {
+        margin-right: 8px;
+    }
+    #userform #settings_sections {
+        width: 100%;
+        position: relative; 
     }
 }
