@@ -39,17 +39,19 @@ svg|a:hover {
     border-top: 2px solid #ffe9af;
 }
 
-/*****************/
-/* SHADOWS FIXES */
-/*****************/
+/***********/
+/* BUTTONS */
+/***********/
 input[type=button], input[type=reset], input[type=submit] {
     background: linear-gradient(#f4f4f4, #b8b8b8);
     border-color: rgba(255, 255, 255, 0.05);
+    color: #333333;
+    font-weight: 600;
 }
 input[type=button]:hover, input[type=reset]:hover, input[type=submit]:hover {
     background: linear-gradient(#cccccc, #999999);
     border-color: rgba(255, 255, 255, 0.05);
-    color: #fff;
+    color: #000000;
 }
 
 /***************/
