@@ -1,5 +1,9 @@
 @import url('https://ianon.app/static/styles/apollostage_sunset/style.css');
 
+.tooltipster-default .tooltipster-content, body, button, h1, h2, h3, h4, h5, h6, input, select, textarea {
+    font-family: "Proxima Nova", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Symbol";
+}
+
 /****************/
 /* TEXTS COLORS */
 /****************/
@@ -165,12 +169,6 @@ table .a:nth-child(odd),
 table .b:nth-child(odd),
 .colhead,
 .colhead_dark,
-input[type=email],
-input[type=password],
-input[type=text],
-input[type=search],
-select,
-textarea,
 .head,
 #searchbars > ul,
 .torrent_table .group,
@@ -180,6 +178,14 @@ textarea,
 .torrentdetails,
 blockquote {
     background-color: #232323;
+}
+input[type=email],
+input[type=password],
+input[type=text],
+input[type=search],
+select,
+textarea {
+    background-color: #1e1e1e;
 }
 table,
 table .rowa:nth-child(even),
@@ -218,10 +224,10 @@ table .rowb,
     background-color: #363636;
 }
 .hide_torrents > a::after {
-    content: "\2BC6";
+    content: "\25BC";
 }
 .show_torrents > a::after {
-    content: "\2BC8";
+    content: "\25B6";
 }
 
 /***************/
